@@ -1,7 +1,6 @@
 const dropdown = document.querySelector('.dropdown');
 const menuDua = document.getElementById('menu-kedua');
 const menuTiga = document.getElementById('menu-ketiga');
-const iconTogler = document.getElementById('togicon');
 const icontog = document.getElementById('icontog');
 const toggler = document.getElementById('toggler');
 
@@ -20,10 +19,6 @@ toggler.addEventListener('click',()=>{
 })
 
 
-// iconTogler.addEventListener('click',()=>{
-//     icontog.classList.remove('fa-bars');
-//     icontog.classList.toggle('fa-xmark');
-// });
 
 document.addEventListener('click', (e) => {
   let elementClass = e.target.className;
