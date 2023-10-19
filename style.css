@@ -76,6 +76,7 @@ img {
 /* Footer */
 
 footer {
+  margin-top: 20px;
   width: 100%;
   color: var(--white-not-white);
   background: var(--dark-blue);
@@ -85,7 +86,6 @@ footer {
   padding: 10px;
   position: fixed;
   bottom: 0px;
-  margin-top: 20px;
 }
 
 /* Footer */
@@ -362,7 +362,6 @@ section {
     font-size: 1.8em;
   }
   section {
-    margin-top: 20px;
     padding: 0 15px 0 15px;
   }
   .tujuan-container {
@@ -379,10 +378,9 @@ section {
 
 @media (max-width: 412px) {
   h2 {
-    font-size: 1.4em;
+    font-size: 1em;
   }
   section {
-    margin-top: 20px;
     padding: 0 15px 0 15px;
   }
   .tujuan-container {
@@ -390,7 +388,7 @@ section {
   }
   .card-tujuan {
     width: 100%;
-    height: 300px;
+    height: 150px;
     border-radius: 10px;
   }
 }
