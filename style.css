@@ -385,6 +385,7 @@ section {
   }
   .tujuan-container {
     flex-wrap: wrap;
+    gap: 15px; 
   }
   .card-tujuan {
     width: 100%;
