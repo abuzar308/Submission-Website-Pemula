@@ -305,7 +305,7 @@ section {
   width: 100%;
   height: auto;
   margin: 20px 0;
-  padding: 0 25px;
+  padding: 0 15px;
 }
 @media (max-width: 1024px) {
   h2 {
