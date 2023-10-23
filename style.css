@@ -6,6 +6,11 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --dark-blue: #12486b;
   --middle-blue: #419197;
@@ -36,7 +41,6 @@ a {
 .d-navbar {
   display: inline-flex;
   width: 100%;
-  box-shadow: 0 0 3px #333;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1) 0%,
@@ -307,11 +311,121 @@ section {
 
 .container {
   width: 100%;
-  height: auto;
   margin: 20px 0;
   padding: 0 25px;
 }
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container-wrapper {
+  flex: 65%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.aside {
+  flex: 25%;
+}
+.card-perjalanan {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #333;
+  gap: 15px;
+}
+.card-perjalanan-image {
+  width: 250px;
+  background: #333;
+}
+.card-perjalanan-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-perjalanan-info {
+  flex: 75%;
+  background: #fff;
+  padding: 10px;
+  text-align: justify;
+  overflow: hidden;
+}
+.card-perjalanan-info p {
+  font-size: 0.96rem;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+}
+
+.card {
+  box-shadow: 0 0 3px #333;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.img-bulat {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #333;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+.img-bulat:hover {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #333;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+
 @media (max-width: 1024px) {
+  .aside {
+    width: 100%;
+  }
+  .card-perjalanan {
+    flex-direction: column;
+    height: auto;
+  }
+  .card-perjalanan-image {
+    width: 100%;
+    height: 300px;
+  }
+  .card-perjalanan-info h2 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .card-perjalanan-info p {
+    font-size: 0.9rem;
+  }
   h2 {
     font-size: 2em;
   }
@@ -332,6 +446,9 @@ section {
 }
 
 @media (max-width: 768px) {
+  .card-perjalanan-info p {
+    font-size: 0.76rem;
+  }
   .slide img {
     width: 100%;
     height: 250px;
@@ -407,5 +524,9 @@ section {
     width: 100%;
     height: 150px;
     border-radius: 10px;
+  }
+  th,
+  td {
+    font-size: 0.7rem;
   }
 }
