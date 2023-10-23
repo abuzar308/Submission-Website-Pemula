@@ -6,17 +6,16 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-
-body {
-  background: var(--middle-blue);
-}
-
 :root {
   --dark-blue: #12486b;
   --middle-blue: #419197;
   --blue-sea: #78d6c6;
   --light: #f5fccd;
   --white-not-white: #fff;
+}
+
+body {
+  background: var(--white-not-white);
 }
 
 .text-color-light {
@@ -38,8 +37,11 @@ a {
   display: inline-flex;
   width: 100%;
   box-shadow: 0 0 3px #333;
-  background: var(--dark-blue);
-  opacity: 0.8;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   padding: 0 25px 0 25px;
   align-items: center;
   justify-content: space-between;
@@ -73,10 +75,13 @@ img {
 
 /* Navbar */
 
+main {
+  margin-bottom: 120px;
+}
 /* Footer */
 
 footer {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 100%;
   color: var(--white-not-white);
   background: var(--dark-blue);
@@ -229,7 +234,7 @@ footer {
 
 .slide img {
   width: 100%;
-  height: 620px;
+  height: 100%;
 }
 
 #radio1:checked ~ .first {
@@ -251,20 +256,21 @@ footer {
 /* Hero */
 
 h2 {
-  color: var(--white-not-white);
+  color: var(--dark-blue);
   font-size: 2.4em;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 section {
+  width: 100%;
+  height: 100%;
   margin-top: 50px;
   padding: 0 25px 0 25px;
 }
 
 .tujuan-container {
   width: 100%;
-  height: 400px;
   display: flex;
   gap: 20px;
 }
@@ -299,6 +305,12 @@ section {
   text-align: center;
 }
 
+.container {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 0 15px;
+}
 @media (max-width: 1024px) {
   h2 {
     font-size: 2em;
@@ -327,7 +339,11 @@ section {
   .menu {
     position: absolute;
     width: 100%;
-    background: var(--dark-blue);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
     top: 50px;
     right: 0;
     overflow-y: hidden;
@@ -371,7 +387,7 @@ section {
   }
   .card-tujuan {
     width: 45%;
-    height: 300px;
+    height: 250px;
     border-radius: 10px;
   }
 }
@@ -385,6 +401,7 @@ section {
   }
   .tujuan-container {
     flex-wrap: wrap;
+    gap: 15px;
   }
   .card-tujuan {
     width: 100%;
