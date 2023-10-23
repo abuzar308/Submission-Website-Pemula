@@ -299,6 +299,12 @@ section {
   text-align: center;
 }
 
+.container {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 0 15px;
+}
 @media (max-width: 1024px) {
   h2 {
     font-size: 2em;
